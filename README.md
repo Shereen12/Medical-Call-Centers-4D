@@ -9,7 +9,7 @@ Authentication process:
 
 ## Get all users:
 - url: /allusers
-Request URL:
+- Request URL:
 http://127.0.0.1:8000/allusers
 Request Method:
 GET
