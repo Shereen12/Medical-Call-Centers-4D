@@ -1,6 +1,6 @@
 @extends('layout.app')
 @section('content')
-<h4>Create New User</h4>
+<h4>Login</h4>
 <form>
     <input type="hidden" id="_token" name="_token" value="{{ csrf_token()}}">
     <div class="form-item">
