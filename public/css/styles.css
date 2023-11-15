@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(/images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav .material-icons {
+    display: none;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: aliceblue;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.content h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+form {
+    text-align: center;
+    padding: 30px 0;
+    border: 1px;
+    margin: auto;
+    width: 50%;
+    border-style: groove;
+    border-color: lightgrey;
+}
+
+.form-item {
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.error {
+    color: #f44336;
+}
+
+.form-item input {
+    padding: 10px;
+}
+
+#allusers a {
+    display: block;
+    margin: 10px;
+}
+
+.user span {
+    display: block;
+    margin: 10px;
+}
+
+#greeting-button {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#greeting-button .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#greeting-button .btn:hover {
+    border: 1px solid #f44336;
+    background-color: #f44336;
+    transition: 1s;
+}
+@media (max-width: 700px) {
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background-color: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .material-icons {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    form {
+        text-align: center;
+        padding: 30px 0;
+        border: 1px;
+        margin: 10px;
+        width: 95%;
+        border-style: groove;
+        border-color: lightgrey;
+    }
+}
